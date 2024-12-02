@@ -1,4 +1,4 @@
-const listData = require("./listInputData");
+const listData = require("../listInputData");
 
 const sortedLeftList = listData.leftList.sort((a, b) => a - b);
 const sortedRightList = listData.rightList.sort((a, b) => a - b);
