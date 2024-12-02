@@ -7,7 +7,10 @@ const distanceNumbers = [];
 
 const calculateDistances = () => {
   if (sortedLeftList.length && sortedRightList.length) {
-    const distance = sortedRightList[0] - sortedLeftList[0] < 0 ? sortedLeftList[0] - sortedRightList[0] : sortedRightList[0] - sortedLeftList[0];
+    const distance =
+      sortedRightList[0] - sortedLeftList[0] < 0
+        ? sortedLeftList[0] - sortedRightList[0]
+        : sortedRightList[0] - sortedLeftList[0];
     distanceNumbers.push(distance);
     sortedRightList.shift();
     sortedLeftList.shift();
@@ -16,7 +19,7 @@ const calculateDistances = () => {
     const calculatedDinstance = calculateAnswer();
     console.log(`The distance is ${calculatedDinstance}`);
   }
-}
+};
 
 calculateDistances();
 
