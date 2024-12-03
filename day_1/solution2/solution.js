@@ -21,7 +21,7 @@ function simalarityScore() {
   const score = scores.reduce((acc, curr) => {
     return acc + curr;
   });
-  console.log("score", score);
+
   return score;
 }
 
